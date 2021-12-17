@@ -16,8 +16,20 @@ body {
 }
 
 .calculator__screen {
-  padding: 20px 5px 20px;
+  padding: 20px 5px 40px;
   text-align: right;
+  position: relative;
+}
+
+.previous__operation {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 14px;
+  color: #6C7070;
+}
+
+.current__operation {
   font-size: 45px;
   font-weight: 600;
 }
@@ -63,15 +75,18 @@ body {
   font-weight: 300;
 }
 
+.calculator__btn.equals {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: #81b7de;
+}
+
 .calculator__btn:hover {
   background-color: #c9d1d2;
 }
 
-.calculator__btn.operator:last-child {
-  background-color: #81b7de;
-}
-
-.calculator__btn.calculator__btn.operator:last-child:hover {
+.calculator__btn.equals:last-child:hover {
   background-color: #4599db;
 }
 
